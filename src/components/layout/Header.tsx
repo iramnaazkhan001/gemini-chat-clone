@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Moon, Sun, Plus, Menu, X, Settings, LogOut } from 'lucide-react';
+import { Moon, Sun, Plus, Menu, X, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import useChatStore from '@/store/useChatStore';
 

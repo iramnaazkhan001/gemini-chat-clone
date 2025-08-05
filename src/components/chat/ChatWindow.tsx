@@ -37,7 +37,6 @@ export const ChatWindow = () => {
     
     setShowScrollButton(!isNearBottom);
 
-    // Simulate infinite scroll loading
     if (scrollTop === 0 && currentChat?.messages.length && currentChat.messages.length > 10) {
       if (!isLoadingMore) {
         setIsLoadingMore(true);
@@ -54,7 +53,6 @@ export const ChatWindow = () => {
     addMessage(currentChatroom, content, image);
     setIsTyping(true);
     
-    // Auto scroll to bottom after sending
     setTimeout(scrollToBottom, 100);
   };
 
@@ -94,7 +92,6 @@ export const ChatWindow = () => {
         </p>
       </div>
 
-      {/* Messages */}
       <div
         ref={messagesContainerRef}
         className="flex-1 overflow-y-auto p-4 space-y-4 relative messages-container"
@@ -123,7 +120,6 @@ export const ChatWindow = () => {
 
         <div ref={messagesEndRef} />
 
-        {/* Scroll to bottom button */}
         {showScrollButton && (
           <Button
             onClick={scrollToBottom}
@@ -135,7 +131,6 @@ export const ChatWindow = () => {
         )}
       </div>
 
-      {/* Message Input */}
       <MessageInput
         onSendMessage={handleSendMessage}
         disabled={isTyping}

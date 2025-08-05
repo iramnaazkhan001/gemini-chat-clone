@@ -1,6 +1,3 @@
-// src/utils/dateUtils.ts
-
-// Formats a date to a time string (e.g., "6:09 PM")
 export const formatTime = (date: Date | null | undefined): string => {
   if (!(date instanceof Date) || isNaN(date.getTime())) {
     return 'Invalid time';
@@ -12,7 +9,6 @@ export const formatTime = (date: Date | null | undefined): string => {
   }).format(date);
 };
 
-// Formats the distance between now and the given date (e.g., "just now", "5m ago")
 export const formatDistanceToNow = (date: Date | null | undefined): string => {
   if (!(date instanceof Date) || isNaN(date.getTime())) {
     return 'Invalid date';

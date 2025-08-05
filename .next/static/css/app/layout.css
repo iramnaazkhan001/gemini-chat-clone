@@ -1283,13 +1283,13 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Focus styles for accessibility */
+
 .focus-visible:focus-visible {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
 
-/* Custom animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1305,7 +1305,7 @@ video {
   animation: fadeIn 0.3s ease-out;
 }
 
-/* Message bubbles */
+
 .message-bubble {
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -1313,12 +1313,12 @@ video {
           hyphens: auto;
 }
 
-/* Dark mode transitions */
+
 * {
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-/* Loading skeleton animation */
+
 @keyframes skeleton {
   0% {
     background-position: -200px 0;
@@ -1339,7 +1339,7 @@ video {
   background-size: 200px 100%;
 }
 
-/* Custom scrollbar for message container */
+
 .messages-container {
   scrollbar-width: thin;
   scrollbar-color: rgb(203 213 225) transparent;

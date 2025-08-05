@@ -4,7 +4,9 @@ A fully functional, responsive chat application that mimics Google's Gemini AI i
 
 ## Live Link
 
-[View Live Application](https://your-deployment-url.vercel.app)
+[View Live on Netlify](https://gemini-chat-clone.netlify.app/)
+[View Live on Vercel](https://gemini-chat-clone-git-main-iramnaaz-khans-projects.vercel.app/)
+
 
 ## Features
 
@@ -57,7 +59,7 @@ A fully functional, responsive chat application that mimics Google's Gemini AI i
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/gemini-chat-clone.git
+git clone https://github.com/iramnaazkhan001/gemini-chat-clone.git
 cd gemini-chat-clone
 ```
 
@@ -151,7 +153,7 @@ src/
 - Focus Management: Logical focus flow throughout the app
 - Color Contrast: WCAG compliant color ratios
 
-## 🎨 Design System
+## Design System
 
 ### Colors
 - Primary: Blue (#3B82F6)

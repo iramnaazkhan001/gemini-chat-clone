@@ -120,7 +120,6 @@ const useChatStore = create<ChatState & ChatActions>()(
           ),
         }));
 
-        // Simulate AI response after a delay
         setTimeout(() => {
           get().simulateAIResponse(chatroomId);
         }, 1500 + Math.random() * 2000);
@@ -186,7 +185,6 @@ const useChatStore = create<ChatState & ChatActions>()(
       initializeApp: () => {
         if (typeof window === 'undefined') return;
         
-        // Initialize dark mode based on system preference
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const stored = localStorage.getItem('chat-store');
         
